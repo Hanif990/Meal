@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Details</title>
+    <link rel="stylesheet" href="Mealdetail.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Meal Details</h1>
+        
+        <!-- Display for meal data -->
+        <div id="meal-details" class="meal-info">
+            <h2>Meal Image</h2>
+            <img id="mealImage" src="" alt="Meal Image"/>
+            <h2>Meal Information</h2>
+            <p id="Meal"></p>
+            <p id="MealCategory"></p>
+            <p id="MealArea"></p>
+            <h2>Instructions</h2>
+            <p id="MealInstructions"></p>
+            <h2>Ingredients</h2>
+            <div id="ingredient-list"></div>
+            <h2>Video Tutorial</h2>
+            <div id="youtubeLink"></div>
+        </div>
+        <button onclick="displayMeal()" class="display-button">Make Your Meal</button>
+        <button onclick="goBack()" class="back-button">Back to Search</button>
+    </div>
+    
+    <script src="Mealdetail.js"></script>
+</body>
+</html>

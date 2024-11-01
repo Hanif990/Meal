@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image:url(Meal.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #218838;
+}
+
+.meal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.meal-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.meal-box:hover {
+    transform: translateY(-10px);
+}
+
+.meal-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.meal-details-button {
+  padding: 10px;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meal-details-button:hover {
+  background-color: #0056b3;
+}
+
+.meal-info {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#mealImage {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#youtubeLink a {
+  color: #dc3545;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#youtubeLink a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1em;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: rgb(26, 156, 26);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #025622;
+}
+
+/* Styling for navigation bar at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar ul li {
+  margin: 0;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+}
+
+.container {
+  margin-top: 60px; /* Offset for fixed navbar */
+}

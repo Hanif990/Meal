@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Display and CRUD</title>
+    <link rel="stylesheet" href="Mealdetail.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Make Your Meal Planner</h1>
+        
+        <div class="crud-operations">
+            <input type="text" id="fileName" placeholder="Enter file name">
+            <button onclick="createFile()">Create</button>
+            <button onclick="readFile()">Read</button>
+            <button onclick="updateFile()">Update</button>
+            <button onclick="deleteFile()">Delete</button>
+        </div>
+        
+        <!-- Editable fields for meal details -->
+        <div class="meal-details">
+            <h2>Edit Your Meal</h2>
+            <input type="text" id="mealName" placeholder="Meal Name">
+            <input type="text" id="mealCategory" placeholder="Category">
+            <input type="text" id="mealArea" placeholder="Area">
+            <textarea id="mealInstructions" placeholder="Instructions"></textarea>
+            <textarea id="mealIngredients" placeholder="Ingredients (separate by commas)"></textarea>
+        </div>
+        
+        <div id="fileOutput"></div>
+        <button onclick="goBack()" class="back-button">Back to Meal Details</button>
+    </div>
+    
+    <script src="Ingredientdisplay.js"></script>
+</body>
+</html>
